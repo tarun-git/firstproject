@@ -1,0 +1,7 @@
+interface Ten-GigabitEthernet1/0/4
+ port link-mode bridge
+ description LINK-AGG-GROUP_MGMT_B-SUS_INFRA_MGMT_B
+ port link-type trunk
+ port trunk permit vlan 1 10 20 30 110 to 111 1110 to 1113 4000 to 4010
+ undo stp enable
+ port link-aggregation group 2
